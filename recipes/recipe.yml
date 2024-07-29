@@ -24,12 +24,32 @@ modules:
     install:
       # - micro
       # - starship
+      - alacritty
+      - breeze-cursor-theme
+      - breeze-gtk
+      - breeze-icon-theme
+      - fedora-release-identity-lxqt
+      - fedora-release-lxqt
+      - firewall-config
+      - fish
+      - initial-setup-gui
+      - kvantum
+      - libdbusmenu-lxqt
+      - liblxqt
+      - libqtxdg
+      - lximage-qt
       - lxqt-about
       - lxqt-admin
+      - lxqt-archiver
+      - lxqt-build-tools
       - lxqt-common
       - lxqt-config
+      - lxqt-config-randr
       - lxqt-globalkeys
+      - lxqt-l10n
+      - lxqt-menu-data
       - lxqt-notificationd
+      - lxqt-openssh-askpass
       - lxqt-panel
       - lxqt-policykit
       - lxqt-powermanagement
@@ -38,12 +58,31 @@ modules:
       - lxqt-session
       - lxqt-sudo
       - lxqt-themes
+      - lxqt-themes-fedora
       - lxqt-wallet
-      - lxqt-archiver
-      - libdbusmenu-lxqt
-      - lxqt-build-tools
-      - lxqt-openssh-askpass
-      - fedora-release-lxqt
+      - mesa-dri-drivers
+      - mesa-vulkan-drivers
+      - micro
+      - network-manager-applet
+      - nm-connection-editor
+      - notification-daemon
+      - obconf
+      - openbox
+      - pavucontrol-qt
+      - pcmanfm-qt
+      - perl-File-MimeInfo
+      - plymouth-system-theme
+      - podman-compose
+      - qt5-qtimageformats
+      - samba-client
+      - sddm
+      - sddm-themes
+      - starship
+      - upower
+      - xdg-desktop-portal-kde
+      - xdg-desktop-portal-lxqt
+      - xdg-user-dirs
+      - xfwm4
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
