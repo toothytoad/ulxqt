@@ -71,6 +71,7 @@ modules:
       - pavucontrol-qt
       - pcmanfm-qt
       - perl-File-MimeInfo
+      - plasma-workspace-x11
       - plymouth-system-theme
       - podman-compose
       - qt5-qtimageformats
@@ -79,6 +80,7 @@ modules:
       - sddm-themes
       - starship
       - upower
+      - util-linux
       - xdg-desktop-portal-kde
       - xdg-desktop-portal-lxqt
       - xdg-user-dirs
