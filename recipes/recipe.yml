@@ -76,6 +76,8 @@ modules:
       # - sddm
       # - sddm-themes
       - starship
+      - udisks2
+      - udiskie
       - upower
       - util-linux
       - xdg-desktop-portal-kde
