@@ -85,6 +85,7 @@ modules:
       - xdg-desktop-portal-lxqt
       - xdg-user-dirs
       - xfwm4
+      - xorg-x11-server
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
