@@ -22,19 +22,16 @@ modules:
     repos:
        - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
-      # - micro
-      # - starship
       - alacritty
       - breeze-cursor-theme
       - breeze-gtk
       - breeze-icon-theme
-      #- fedora-release-identity-lxqt
       - fedora-release-lxqt
       - firewall-config
       - fish
+      - gdm
       - initial-setup-gui
       - kvantum
-      #- libdbusmenu-lxqt
       - liblxqt
       - libqtxdg
       - lximage-qt
@@ -76,8 +73,8 @@ modules:
       - podman-compose
       - qt5-qtimageformats
       - samba-client
-      - sddm
-      - sddm-themes
+      # - sddm
+      # - sddm-themes
       - starship
       - upower
       - util-linux
