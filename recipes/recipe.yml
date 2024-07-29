@@ -28,13 +28,13 @@ modules:
       - breeze-cursor-theme
       - breeze-gtk
       - breeze-icon-theme
-      - fedora-release-identity-lxqt
+      #- fedora-release-identity-lxqt
       - fedora-release-lxqt
       - firewall-config
       - fish
       - initial-setup-gui
       - kvantum
-      - libdbusmenu-lxqt
+      #- libdbusmenu-lxqt
       - liblxqt
       - libqtxdg
       - lximage-qt
@@ -46,7 +46,7 @@ modules:
       - lxqt-config
       - lxqt-config-randr
       - lxqt-globalkeys
-      - lxqt-l10n
+      #- lxqt-l10n
       - lxqt-menu-data
       - lxqt-notificationd
       - lxqt-openssh-askpass
