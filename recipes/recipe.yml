@@ -88,7 +88,7 @@ modules:
       - xdg-user-dirs
       - xdg-utils
       - xfwm4
-      - libx11
+      #- libx11
       - xcb-util
       - libX11-xcb
       - libX11-common
