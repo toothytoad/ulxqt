@@ -29,7 +29,9 @@ modules:
       - breeze-icon-theme
       #- dnfdragora-updater
       #- falkon
+      - fedora-release
       - fedora-release-lxqt
+      - fedora-release-ostree-desktop
       - firewall-config
       - fish
       #- gdm
@@ -83,7 +85,9 @@ modules:
       - udisks2
       - upower
       - util-linux
-      #- xdg-desktop-portal-kde
+      - xdg-desktop-portal
+      - xdg-desktop-portal-gtk
+      - xdg-desktop-portal-kde
       - xdg-desktop-portal-lxqt
       - xdg-user-dirs
       - xdg-utils
@@ -116,10 +120,10 @@ modules:
       remove:
       # - org.gnome.eog
   
-  #- type: systemd
-  #  system:
-  #    enabled:
-      
+  - type: systemd
+    system:
+      enabled:
+        - sddm.service
   
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
