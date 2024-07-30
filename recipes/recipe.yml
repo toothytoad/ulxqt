@@ -80,6 +80,7 @@ modules:
       - samba-client
       - sddm
       - sddm-themes
+      - sddm-x11
       - starship
       - udiskie
       - udisks2
@@ -92,11 +93,10 @@ modules:
       - xdg-user-dirs
       - xdg-utils
       - xfwm4
-      #- libx11
-      - xcb-util
-      - libX11-xcb
-      - libX11-common
-      - xorg-x11-server-Xorg
+      #- xcb-util
+      #- libX11-xcb
+      #- libX11-common
+      #- xorg-x11-server-Xorg
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
