@@ -86,9 +86,9 @@ modules:
       - udisks2
       - upower
       - util-linux
-      - xdg-desktop-portal
-      - xdg-desktop-portal-gtk
-      - xdg-desktop-portal-kde
+      #- xdg-desktop-portal
+      #- xdg-desktop-portal-gtk
+      #- xdg-desktop-portal-kde
       - xdg-desktop-portal-lxqt
       - xdg-user-dirs
       - xdg-utils
@@ -97,6 +97,25 @@ modules:
       #- libX11-xcb
       #- libX11-common
       #- xorg-x11-server-Xorg
+      - p7zip
+      - unrar
+      - gvfs-mtp
+      - gvfs-gphoto2
+      - gvfs-smb
+      - gvfs-nfs
+      - gvfs-fuse
+      - gvfs-archive
+      - android-tools
+      - wireplumber
+      - pipewire
+      - pamixer
+      - pulseaudio-utils
+      - gnome-disk-utility
+      - vulkan-validation-layers
+      - vulkan-tools  
+      - dbus-tools
+      - dbus-daemon  
+      - polkit
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
