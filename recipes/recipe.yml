@@ -27,11 +27,13 @@ modules:
       - breeze-cursor-theme
       - breeze-gtk
       - breeze-icon-theme
+      #- dnfdragora-updater
+      #- falkon
       - fedora-release-lxqt
       - firewall-config
       - fish
       #- gdm
-      #- initial-setup-gui
+      - initial-setup-gui
       - kvantum
       - liblxqt
       - libqtxdg
@@ -72,12 +74,13 @@ modules:
       - plymouth-system-theme
       - podman-compose
       - qt5-qtimageformats
+      - qterminal
       - samba-client
       - sddm
       - sddm-themes
       - starship
-      - udisks2
       - udiskie
+      - udisks2
       - upower
       - util-linux
       #- xdg-desktop-portal-kde
@@ -85,7 +88,11 @@ modules:
       - xdg-user-dirs
       - xdg-utils
       - xfwm4
-      - xorg-x11-server-Xorg
+      - libx11
+      - xcb-util
+      - libX11-xcb
+      - libX11-common
+      #- xorg-x11-server-Xorg
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
