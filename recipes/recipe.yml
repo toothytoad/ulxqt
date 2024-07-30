@@ -4,7 +4,8 @@ name: ulxqt
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/base-main
+#base-image: ghcr.io/ublue-os/base-main
+base-image: ghcr.io/ublue-os/kinoite-main
 image-version: 40 # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -29,8 +30,8 @@ modules:
       - fedora-release-lxqt
       - firewall-config
       - fish
-      - gdm
-      - initial-setup-gui
+      #- gdm
+      #- initial-setup-gui
       - kvantum
       - liblxqt
       - libqtxdg
@@ -43,7 +44,6 @@ modules:
       - lxqt-config
       - lxqt-config-randr
       - lxqt-globalkeys
-      #- lxqt-l10n
       - lxqt-menu-data
       - lxqt-notificationd
       - lxqt-openssh-askpass
@@ -73,14 +73,14 @@ modules:
       - podman-compose
       - qt5-qtimageformats
       - samba-client
-      # - sddm
-      # - sddm-themes
+      - sddm
+      - sddm-themes
       - starship
       - udisks2
       - udiskie
       - upower
       - util-linux
-      - xdg-desktop-portal-kde
+      #- xdg-desktop-portal-kde
       - xdg-desktop-portal-lxqt
       - xdg-user-dirs
       - xdg-utils
