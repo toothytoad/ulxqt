@@ -43,15 +43,20 @@ cosign verify --key cosign.pub ghcr.io/toothytoad/ulxqt
 ```
 
 
-####Credit:
+#### Credit:
 
-[wayblue](https://github.com/wayblueorg/wayblue)
+[wayblue](https://github.com/wayblueorg/wayblue) 
+
 [secureblue](https://github.com/secureblue/secureblue)
 
-####Themes:
+#### Themes:
 
 [catppuccin lxqt](https://github.com/catppuccin/lxqt)
+
 [Phinger Cursors](https://github.com/phisch/phinger-cursors)
+
 [catppuccin sddm](https://github.com/catppuccin/sddm)
+
 [tinted-theming](https://github.com/tinted-theming/schemes)
+
 [oomox](https://github.com/themix-project/oomox/)
