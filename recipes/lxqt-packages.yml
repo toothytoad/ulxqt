@@ -1,0 +1,30 @@
+type: rpm-ostree
+install:
+  #- falkon
+  - kvantum
+  - liblxqt
+  - libqtxdg
+  - lximage-qt
+  - lxqt-about
+  - lxqt-admin
+  - lxqt-archiver
+  #- lxqt-build-tools
+  - lxqt-common
+  - lxqt-config
+  - lxqt-config-randr
+  - lxqt-globalkeys
+  - lxqt-menu-data
+  - lxqt-notificationd
+  - notification-daemon
+  #- lxqt-openssh-askpass
+  - lxqt-panel
+  - lxqt-policykit
+  - lxqt-powermanagement
+  - lxqt-qtplugin
+  - lxqt-runner
+  - lxqt-session
+  - lxqt-sudo
+  #- lxqt-themes
+  #- lxqt-themes-fedora
+  #- qterminal
+  - xdg-desktop-portal-lxqt

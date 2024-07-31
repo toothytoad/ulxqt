@@ -1,0 +1,6 @@
+type: script
+scripts:
+  - setfilepermissions.sh
+  - httpsmirrors.sh
+  - removesuid.sh
+  - disablegeoclue.sh

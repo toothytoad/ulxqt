@@ -1,0 +1,103 @@
+type: rpm-ostree
+install:
+# launcher
+  #- rofi-wayland
+
+# environment
+  - xorg-x11-server-Xorg
+  #- xorg-x11-server-Xwayland
+  - polkit
+  #- xfce-polkit 
+  - xdg-user-dirs
+  - xdg-utils
+  - dbus-tools
+  - dbus-daemon
+  - util-linux
+  #- wl-clipboard
+  - pavucontrol-qt
+  - playerctl
+  #- qt5-qtwayland
+  #- qt6-qtwayland
+  - vulkan-validation-layers
+  - vulkan-tools
+  - mesa-dri-drivers
+  - mesa-vulkan-drivers
+  - google-noto-emoji-fonts
+  - gnome-disk-utility
+  - udiskie
+  - udisks2
+  - ddcutil
+  - wget2
+  - micro
+  - nano
+  - fwupd
+  - fwupd-efi
+  - gnome-firmware
+  
+# power
+  - tlp
+  - powertop
+  
+# container
+  - podman-compose
+  
+# sound
+  - wireplumber
+  - pipewire
+  - pamixer
+  - pulseaudio-utils
+
+# networking
+  - network-manager-applet
+  - nm-connection-editor
+  - NetworkManager-openvpn
+  - NetworkManager-openconnect
+  - bluez
+  - bluez-tools
+  - blueman
+
+# file manager
+  - pcmanfm-qt
+  #- thunar
+  #- thunar-archive-plugin 
+  #- thunar-volman
+  - perl-File-MimeInfo
+  - xarchiver
+  #- imv
+  - p7zip
+  - unrar
+  - samba-client
+  - gvfs-mtp
+  - gvfs-gphoto2
+  - gvfs-smb
+  - gvfs-nfs
+  - gvfs-fuse
+  - gvfs-archive
+  - android-tools
+
+# screenshot
+  - slurp
+  - grim
+
+# display
+  - xfwm4
+  #- openbox
+  #- obconf
+
+
+# terminal
+  - foot
+  - alacritty
+  - starship
+  - fish
+
+# theme and GUI
+  - adwaita-qt5
+  - fontawesome-fonts-all
+  - gnome-themes-extra
+  - gnome-icon-theme
+  - paper-icon-theme
+  - breeze-icon-theme
+  - breeze-gtk
+  - breeze-cursor-theme
+  - papirus-icon-theme
