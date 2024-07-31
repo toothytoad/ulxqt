@@ -4,6 +4,8 @@ install:
   - kvantum
   - liblxqt
   - libqtxdg
+  - libX11-xcb
+  - libX11-common
   - lximage-qt
   - lxqt-about
   - lxqt-admin
@@ -27,4 +29,5 @@ install:
   #- lxqt-themes
   #- lxqt-themes-fedora
   #- qterminal
+  - xcb-util
   - xdg-desktop-portal-lxqt
