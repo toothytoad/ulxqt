@@ -29,12 +29,25 @@ install:
   - udiskie
   - udisks2
   - ddcutil
+  - egl-utils
   - wget2
+  - aria2
   - micro
   - nano
   - fwupd
   - fwupd-efi
   - gnome-firmware
+  - bat
+  - exa
+  - difftastic
+  - zoxide
+  - fd-find
+  - ripgrep
+  - fzf
+  #- lazygit
+  #- lazydocker
+  #- yazi
+  #- zellij
   
 # power
   - tlp
@@ -80,13 +93,13 @@ install:
   - android-tools
 
 # screenshot
-  - slurp
-  - grim
+  #- slurp
+  #- grim
 
 # display
   - xfwm4
-  #- openbox
-  #- obconf
+  - openbox
+  - obconf
 
 
 # terminal
