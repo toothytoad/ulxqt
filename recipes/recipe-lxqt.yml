@@ -13,7 +13,7 @@ modules:
   - from-file: common-files.yml
   - from-file: sec-scripts.yml
   - from-file: lxqt-scripts.yml
-  - type: signing
+  - type: ulxqt-signing
   - from-file: sddm-systemd.yml
   - from-file: common-services.yml
   - from-file: common-flatpaks.yml

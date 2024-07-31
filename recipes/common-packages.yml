@@ -66,8 +66,10 @@ install:
   - perl-File-MimeInfo
   - xarchiver
   #- imv
+  - lzip
   - p7zip
   - unrar
+  - zstd
   - samba-client
   - gvfs-mtp
   - gvfs-gphoto2
