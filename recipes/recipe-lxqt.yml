@@ -15,5 +15,5 @@ modules:
   - from-file: lxqt-scripts.yml
   - type: signing
   - from-file: sddm-systemd.yml
-  - from-file: common-service.yml
+  - from-file: common-services.yml
   - from-file: common-flatpaks.yml
