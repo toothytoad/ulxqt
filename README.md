@@ -7,7 +7,7 @@ This repo uses the [BlueBuild](https://blue-build.org/) template and builds LXQT
 
  - lxqt-base LXQT and little else.
  - lxqt the starting point for my daily driver
- - lxqt my daily driver with some additional hardening 
+ - lxqt-sec my daily driver with some additional hardening 
 
 
 ## Why
