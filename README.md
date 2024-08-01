@@ -17,7 +17,7 @@ ublue-os deprecated their LXQT image.
 
 ## How - If you want to use these images either:
 
-1. Use [BlueBuild](https://blue-build.org/how-to/setup/) and set your `base-image` to an image Ex: ```base-image: ghcr.io/toothytoad/lxqt:latest``` and customize to your liking.
+1. Use [BlueBuild](https://blue-build.org/how-to/setup/) and set your `base-image` to an image Ex: ```base-image: ghcr.io/toothytoad/lxqt-base:latest``` and customize to your liking.
 
 2. Follow the directions below and customize with flatpaks and user dot files.
 
