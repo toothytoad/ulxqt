@@ -1,0 +1,16 @@
+type: fonts
+fonts:
+  nerd-fonts:
+    - FiraCode
+    - Hack
+    - SourceCodePro
+    - Terminus
+    - JetBrainsMono
+    - NerdFontsSymbolsOnly
+  google-fonts:
+    - Roboto
+    - Open Sans
+	- Noto Sans
+	- Noto Sans Mono
+	- Noto Serif
+    

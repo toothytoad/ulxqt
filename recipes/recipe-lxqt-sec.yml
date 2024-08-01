@@ -1,4 +1,4 @@
-name: lxqt
+name: lxqt-sec
 
 description: ublue images for lxqt
 
@@ -16,4 +16,5 @@ modules:
   - from-file: sddm-systemd.yml
   - from-file: common-services.yml
   - from-file: common-flatpaks.yml
+  - from-file: sec-scripts.yml
   - type: ulxqt-signing

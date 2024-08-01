@@ -1,4 +1,4 @@
-name: lxqt
+name: lxqt-base
 
 description: ublue images for lxqt
 
@@ -10,10 +10,6 @@ modules:
   - from-file: sddm-packages.yml
   - from-file: common-packages.yml
   - from-file: lxqt-packages.yml
-  - from-file: common-files.yml
-  - from-file: fonts.yml
   - from-file: sddm-files.yml
   - from-file: sddm-systemd.yml
-  - from-file: common-services.yml
-  - from-file: common-flatpaks.yml
   - type: ulxqt-signing
