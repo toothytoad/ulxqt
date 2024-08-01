@@ -3,7 +3,7 @@
 This repo uses the [BlueBuild](https://blue-build.org/) template and builds LXQT images - a minimal image, an opinionated image and an opinionated image with a little extra security.
 
 
-# What
+## What
 
  - lxqt-base LXQT and little else.
  - lxqt the starting point for my daily driver
