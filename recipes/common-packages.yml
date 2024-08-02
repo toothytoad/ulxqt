@@ -6,37 +6,19 @@ install:
 # environment
   - xorg-x11-server-Xorg
   - polkit
-  - xfce-polkit 
   - xdg-user-dirs
+  - util-linux
+  - egl-utils
   - xdg-utils
   - dbus-tools
   - dbus-daemon
-  - util-linux
-  - pavucontrol-qt
-  - playerctl
-  - vulkan-validation-layers
-  - vulkan-tools
-  - google-noto-emoji-fonts
-  - gnome-disk-utility
+  - android-tools
   - udiskie
   - udisks2
   - ddcutil
-  - egl-utils
-  - wget2
-  - aria2
-  - micro
-  - nano
   - fwupd
   - fwupd-efi
-  - gnome-firmware
-  - bat
-  - exa
-  - difftastic
-  - zoxide
-  - fd-find
-  - ripgrep
-  - fzf
-  
+
 # power
   - tlp
   - powertop
@@ -55,6 +37,8 @@ install:
   - pipewire
   - pamixer
   - pulseaudio-utils
+  - pavucontrol-qt
+  - playerctl
 
 # networking
   - network-manager-applet
@@ -64,6 +48,16 @@ install:
   - bluez
   - bluez-tools
   - blueman
+ 
+# window manager
+  - xfwm4
+  - openbox
+  - obconf
+
+# terminal
+  - alacritty
+  - starship
+  - fish
 
 # file manager
   - pcmanfm-qt
@@ -80,18 +74,23 @@ install:
   - gvfs-nfs
   - gvfs-fuse
   - gvfs-archive
-  - android-tools
 
-# window manager
-  - xfwm4
-  - openbox
-  - obconf
-
-# terminal
-  - foot
-  - alacritty
-  - starship
-  - fish
+# GUI utils
+  - gnome-firmware
+  - gnome-disk-utility
+  
+# command line utils
+  - bat
+  - exa
+  - difftastic
+  - zoxide
+  - fd-find
+  - ripgrep
+  - fzf
+  - micro
+  - nano
+  - wget2
+  - aria2
 
 # theme and GUI
   - adwaita-qt5

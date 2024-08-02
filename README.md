@@ -5,14 +5,14 @@ This repo uses the [BlueBuild](https://blue-build.org/) template and builds LXQT
 
 ## What
 
- - lxqt-base LXQT and little else.
- - lxqt the starting point for my daily driver (in progress...)
- - lxqt-hardened my daily driver with some additional hardening (in progress...) 
+ - lxqt-base is the ublue-os base-main image with LXQt and little else.
+ - lxqt is the opinionated starting point for my daily driver (in progress...)
+ - lxqt-hardened is my daily driver with some additional hardening (in progress...) 
 
 
 ## Why
 
-ublue-os deprecated their LXQT image.
+ublue-os deprecated their LXQt image.
 
 
 ## How - If you want to use these images either:
