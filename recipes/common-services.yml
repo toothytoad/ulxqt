@@ -3,4 +3,7 @@ system:
   enabled:
     #- sddm.service
     - tlp.service
-
+    - NetworkManager-dispatcher.service
+  mask:
+    - systemd-rfkill.socket
+    - systemd-rfkill.service
