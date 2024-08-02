@@ -4,9 +4,17 @@
 set -oue pipefail
 
 
+if [ which pip ] ; then
+    pip install qt-material grpcio-tools unicode_slugify pyinotify
+  else
+    wget https://bootstrap.pypa.io/pip/pip.pyz
+	python pip.pyz install qt-material grpcio-tools unicode_slugify pyinotify
+fi
+
+
 # Hardcoded download and install of opensnitch until I have time to build a script.
 
-pip install qt-material grpcio-tools unicode_slugify pyinotify
+
 
 wget -c https://github.com/evilsocket/opensnitch/releases/download/v1.6.6/gustavo_iniguez_goia.asc https://github.com/evilsocket/opensnitch/releases/download/v1.6.6/opensnitch-1.6.6-1.x86_64.rpm https://github.com/evilsocket/opensnitch/releases/download/v1.6.6/opensnitch-ui-1.6.6-1.noarch.rpm
 
