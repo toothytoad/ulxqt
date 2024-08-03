@@ -115,9 +115,9 @@ install:
   - wget2
   - aria2
 
-# 
- - initial-setup
- - initial-setup-gui
+# setup
+  - initial-setup
+  - initial-setup-gui
 
 # theme and GUI
   - adwaita-qt5
