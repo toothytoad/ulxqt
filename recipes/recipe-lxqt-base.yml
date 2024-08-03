@@ -8,8 +8,9 @@ image-version: 40
 
 modules:
   - from-file: sddm-packages.yml
-  - from-file: common-packages.yml
   - from-file: lxqt-packages.yml
+  - from-file: common-packages.yml
   - from-file: sddm-files.yml
   - from-file: sddm-systemd.yml
+  - from-file: common-remove-packages.yml
   - type: ulxqt-signing

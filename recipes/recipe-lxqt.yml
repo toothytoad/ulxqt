@@ -8,12 +8,15 @@ image-version: 40
 
 modules:
   - from-file: sddm-packages.yml
-  - from-file: common-packages.yml
   - from-file: lxqt-packages.yml
+  - from-file: common-packages.yml
+  - from-file: extra-packages.yml
   - from-file: common-files.yml
   - from-file: fonts.yml
   - from-file: sddm-files.yml
   - from-file: sddm-systemd.yml
+  - from-file: common-remove-packages.yml
+  - from-file: extra-remove-packages.yml
   - from-file: common-services.yml
   - from-file: common-flatpaks.yml
   - from-file: common-scripts.yml

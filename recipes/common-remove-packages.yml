@@ -2,7 +2,6 @@ type: rpm-ostree
 remove:
   #- firefox
   #- firefox-langpacks
-  - power-profiles-daemon # Conflicts with TLP
   - openssh-server
   - fedora-chromium-config
   - fedora-flathub-remote
