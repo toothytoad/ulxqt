@@ -7,9 +7,6 @@ install:
 # environment
   - android-tools
 
-  - ddcutil
-  - stress-ng
-
 # power
   - tlp
   - tlp-rdw
@@ -21,14 +18,11 @@ install:
 # graphics
   - colord
   - xiccd
-  
-# networking
-  - mullvad
-  
+
 # input
   - solaar
   - solaar-udev
- 
+
 # window manager
   - xfwm4
 
