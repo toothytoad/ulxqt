@@ -57,10 +57,10 @@ install:
   - blueman
   
  # input
-   - xinput
-   - fprintd
-   - solaar
-   - solaar-udev
+  - xinput
+  - fprintd
+  - solaar
+  - solaar-udev
  
 # window manager
   - xfwm4
