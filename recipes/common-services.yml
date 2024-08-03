@@ -4,6 +4,9 @@ system:
     #- sddm.service
     - tlp.service
     - NetworkManager-dispatcher.service
+    - fprintd.service
+    - fwupd.service
+    - colord.service
   mask:
     - systemd-rfkill.socket
     - systemd-rfkill.service

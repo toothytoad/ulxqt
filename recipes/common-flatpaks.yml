@@ -7,5 +7,6 @@ system:
   repo-title: "Flathub (system-wide)" 
 install:
   - com.github.tchx84.Flatseal
-remove:
+  - org.gnome.Firmware
+#remove:
   # - org.gnome.eog

@@ -16,21 +16,26 @@ install:
   - udiskie
   - udisks2
   - ddcutil
+  - stress-ng
+  
+# firmware
   - fwupd
   - fwupd-efi
 
 # power
   - tlp
+  - tlp-rdw
   - powertop
   
 # container
   - podman-compose
   
 # graphics
-  #- xf86-video-intel
-  #- mesa-dri-drivers
+  - xf86-video-intel
+  - mesa-dri-drivers
   - mesa-vulkan-drivers
   - intel-vpl-gpu-rt
+  - colord
   
 # sound
   - wireplumber
@@ -48,6 +53,10 @@ install:
   - bluez
   - bluez-tools
   - blueman
+  
+ # input
+   - xinput
+   - fprintd
  
 # window manager
   - xfwm4
@@ -76,7 +85,6 @@ install:
   - gvfs-archive
 
 # GUI utils
-  - gnome-firmware
   - gnome-disk-utility
   
 # command line utils
