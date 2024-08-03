@@ -32,10 +32,11 @@ install:
   - podman-compose
   
 # graphics
-  - xf86-video-intel
+  - xorg-x11-drv-intel
   - mesa-dri-drivers
   - mesa-vulkan-drivers
   - intel-vpl-gpu-rt
+  - libva-intel-media-driver
   - colord
   - xiccd
   
