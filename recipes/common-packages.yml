@@ -97,10 +97,10 @@ install:
   - gnome-disk-utility
  
 # Spellcheck
- - aspell
- - aspell-en
- - hunspell
- - hunspell-en
+  - aspell
+  - aspell-en
+  - hunspell
+  - hunspell-en
  
 # command line utils
   - bat
