@@ -27,8 +27,16 @@ install:
   - xfwm4
 
 # terminal
+  - kitty
   - starship
   - fish
+  - kitty-fish-integration
+  - yt-dlp-fish-completion
+  - yt-dlp-bash-completion
+  - cheat
+  - cheat-fish-completion
+  - cheat-bash-completion
+  - cheat-community-cheatsheets
 
 # GUI utils
   - gnome-disk-utility
