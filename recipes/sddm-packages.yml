@@ -9,5 +9,5 @@ install:
   - qt6-qtquickcontrols2
   - qt6-qtsvg
   - lxqt-wallet
-  - kwallet
+  #- kwallet
   - pam-kwallet
