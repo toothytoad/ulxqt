@@ -11,6 +11,6 @@ modules:
   - from-file: lxqt-packages.yml
   - from-file: common-packages.yml
   - from-file: sddm-files.yml
-  - from-file: sddm-systemd.yml
-  - from-file: common-remove-packages.yml
+  - from-file: sddm-services.yml
+  #- from-file: common-remove-packages.yml
   - type: ulxqt-signing

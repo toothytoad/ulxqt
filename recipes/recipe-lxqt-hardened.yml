@@ -14,7 +14,7 @@ modules:
   - from-file: common-files.yml
   - from-file: fonts.yml
   - from-file: sddm-files.yml
-  - from-file: sddm-systemd.yml
+  - from-file: sddm-services.yml
   - from-file: mullvad-scripts.yml
   - from-file: mullvad-packages.yml
   - from-file: mullvad-services.yml
