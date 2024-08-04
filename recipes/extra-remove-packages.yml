@@ -1,11 +1,11 @@
 type: rpm-ostree
 remove:
   #- power-profiles-daemon # Conflicts with TLP
-  - kf5-filesystem
-  - kf5-kconfig-core
+  #- kf5-filesystem
+  #- kf5-kconfig-core
   - kf5-kwallet
-  - kf5-kwallet-libs
-  - kf5-kwindowsystem
+  #- kf5-kwallet-libs
+  #- kf5-kwindowsystem
   #- kde-apps-rpm-macros
   #- kde-l10n
   #- kde-platform-plugin
