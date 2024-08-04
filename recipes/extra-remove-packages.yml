@@ -11,21 +11,22 @@ remove:
   #- kde-platform-plugin
   #- kde-runtime
   #- kde-style-breeze
-  - kde-workspace-common
-  - kde4-filesystem
-  - kdelibs
-  - kdelibs-common
-  - kdelibs-ktexteditor
-  - kdelibs-webkit
-  - kf6-filesystem
-  - kf6-kcolorscheme
-  - kf6-kconfig
-  - kf6-kcoreaddons
-  - kf6-kdbusaddons
-  - kf6-kguiaddons
-  - kf6-ki18n
-  - kf6-knotifications
+  #- kde-workspace-common
+  #
+  #- kde4-filesystem
+  #- kdelibs
+  #- kdelibs-common
+  #- kdelibs-ktexteditor
+  #- kdelibs-webkit
+  #- kf6-filesystem
+  #- kf6-kcolorscheme
+  #- kf6-kconfig
+  #- kf6-kcoreaddons
+  #- kf6-kdbusaddons
+  #- kf6-kguiaddons
+  #- kf6-ki18n
+  #- kf6-knotifications
   - kf6-kwallet
-  - kf6-kwallet-libs
-  - kf6-kwidgetsaddons
-  - kf6-kwindowsystem
+  #- kf6-kwallet-libs
+  #- kf6-kwidgetsaddons
+  #- kf6-kwindowsystem
