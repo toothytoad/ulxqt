@@ -8,7 +8,7 @@ remove:
   - kf5-kwindowsystem
   #- kde-apps-rpm-macros
   #- kde-l10n
-  - kde-platform-plugin
+  #- kde-platform-plugin
   - kde-runtime
   - kde-style-breeze
   - kde-workspace-common
