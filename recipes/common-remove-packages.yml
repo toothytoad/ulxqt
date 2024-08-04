@@ -8,8 +8,4 @@ remove:
   - open-vm-tools
   - open-vm-tools-desktop
   - virtualbox-guest-additions
-  - kf5-kidletime
   - kf5-kwayland
-  - kf5-solid
-  - libkscreen
-  - libkscreen-qt5
