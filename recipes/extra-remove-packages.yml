@@ -6,8 +6,8 @@ remove:
   - kf5-kwallet
   - kf5-kwallet-libs
   - kf5-kwindowsystem
-  - kde-apps-rpm-macros
-  - kde-l10n
+  #- kde-apps-rpm-macros
+  #- kde-l10n
   - kde-platform-plugin
   - kde-runtime
   - kde-style-breeze
