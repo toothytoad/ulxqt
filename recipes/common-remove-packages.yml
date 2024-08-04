@@ -1,7 +1,5 @@
 type: rpm-ostree
 remove:
-  #- firefox
-  #- firefox-langpacks
   - openssh-server
   - fedora-chromium-config
   - fedora-flathub-remote
