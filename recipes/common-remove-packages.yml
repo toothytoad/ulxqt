@@ -16,7 +16,7 @@ remove:
   - kf5-kwayland
   - kf5-kwindowsystem
   - kf5-solid
-  - kde-apps-rpm-macros
+  #- kde-apps-rpm-macros
   - kde-l10n
   - kde-platform-plugin
   - kde-runtime
