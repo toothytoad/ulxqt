@@ -1,3 +1,31 @@
 type: rpm-ostree
 remove:
   - power-profiles-daemon # Conflicts with TLP
+  - kf5-filesystem
+  - kf5-kconfig-core
+  - kf5-kwallet
+  - kf5-kwallet-libs
+  - kf5-kwindowsystem
+  - kde-apps-rpm-macros
+  - kde-l10n
+  - kde-platform-plugin
+  - kde-runtime
+  - kde-style-breeze
+  - kde-workspace-common
+  - kde4-filesystem
+  - kdelibs
+  - kdelibs-common
+  - kdelibs-ktexteditor
+  - kdelibs-webkit
+  - kf6-filesystem
+  - kf6-kcolorscheme
+  - kf6-kconfig
+  - kf6-kcoreaddons
+  - kf6-kdbusaddons
+  - kf6-kguiaddons
+  - kf6-ki18n
+  - kf6-knotifications
+  - kf6-kwallet
+  - kf6-kwallet-libs
+  - kf6-kwidgetsaddons
+  - kf6-kwindowsystem
