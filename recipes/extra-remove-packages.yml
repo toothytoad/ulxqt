@@ -1,6 +1,6 @@
 type: rpm-ostree
 remove:
-  - power-profiles-daemon # Conflicts with TLP
+  #- power-profiles-daemon # Conflicts with TLP
   - kf5-filesystem
   - kf5-kconfig-core
   - kf5-kwallet
