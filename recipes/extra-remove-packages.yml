@@ -10,7 +10,7 @@ remove:
   #- kde-l10n
   #- kde-platform-plugin
   #- kde-runtime
-  - kde-style-breeze
+  #- kde-style-breeze
   - kde-workspace-common
   - kde4-filesystem
   - kdelibs
