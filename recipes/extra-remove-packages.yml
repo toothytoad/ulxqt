@@ -1,3 +1,0 @@
-type: rpm-ostree
-remove:
-  #- power-profiles-daemon # Conflicts with TLP

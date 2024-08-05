@@ -1,8 +1,8 @@
 name: build-ulxqt
 on:
   schedule:
-    - cron: "00 06 * * *" # build at 06:00 UTC every day 
-                          # (20 minutes after last ublue images start building)
+    - cron: "00 07 * * *" # build at 07:00 UTC every day 
+                          # (1 hour after minimalblue images start building)
   push:
     paths-ignore: # don't rebuild if only documentation has changed
       - "**.md"
@@ -21,9 +21,7 @@ jobs:
       fail-fast: false # stop GH from cancelling all matrix builds if one fails
       matrix:
         recipe:
-          - recipe-lxqt-base.yml
-          - recipe-lxqt.yml
-          - recipe-lxqt-hardened.yml
+          - recipe.yml
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -39,9 +37,18 @@ jobs:
           echo "BASE_IMAGE_NAME=$(echo $BASE_IMAGE | sed 's/.*\/.*\///')" >> $GITHUB_ENV
 
       - name: Verify base image
+        if: ${{ !contains(env.IMAGE_NAME, 'minimalblue') }}
         uses: EyeCantCU/cosign-action/verify@v0.3.0
         with:
           containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
+
+      - name: Verify base image
+        if: ${{ contains(env.IMAGE_NAME, 'minimalblue') }}
+        uses: EyeCantCU/cosign-action/verify@v0.3.0
+        with:
+          containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
+          registry: 'ghcr.io/minimalblue'
+          pubkey: 'https://raw.githubusercontent.com/minimalblue/minimalblue/live/cosign.pub'
 
        # the build is fully handled by the reusable github action
       - name: Build ulxqt

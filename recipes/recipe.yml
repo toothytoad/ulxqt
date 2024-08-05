@@ -1,26 +1,18 @@
-name: lxqt-hardened
+name: lxqt
 
 description: ublue images for lxqt
 
-base-image: ghcr.io/ublue-os/base-main
+base-image: ghcr.io/minimalblue/lxqt-main-userns-hardened
 
 image-version: 40 
 
 modules:
-  - from-file: sddm-packages.yml
-  - from-file: lxqt-packages.yml
   - from-file: common-packages.yml
-  - from-file: extra-packages.yml
   - from-file: common-files.yml
   - from-file: fonts.yml
-  - from-file: sddm-files.yml
-  - from-file: sddm-services.yml
   - from-file: mullvad-packages.yml
   - from-file: mullvad-services.yml
-  - from-file: common-remove-packages.yml
-  - from-file: extra-remove-packages.yml
   - from-file: common-services.yml
   - from-file: common-flatpaks.yml
   - from-file: common-scripts.yml
-  - from-file: hardening-scripts.yml
   - type: ulxqt-signing

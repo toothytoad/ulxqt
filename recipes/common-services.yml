@@ -1,12 +1,14 @@
 type: systemd
 system:
   enabled:
-    #- sddm.service
     - tlp.service
     - NetworkManager-dispatcher.service
     - fprintd.service
     - fwupd.service
     - colord.service
+  disable:
+    - systemd-rfkill.socket
+    - systemd-rfkill.service
   mask:
     - systemd-rfkill.socket
     - systemd-rfkill.service

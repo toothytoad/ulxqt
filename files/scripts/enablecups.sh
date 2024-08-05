@@ -3,4 +3,7 @@
 # Tell build process to exit if there are any errors.
 set -oue pipefail
 
-chmod 440 /usr/etc/sudoers.d/timeout
+echo "Disabling the print service"
+systemctl unmask cups
+systemctl enable cups
+
