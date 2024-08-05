@@ -48,7 +48,7 @@ jobs:
         with:
           containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
           registry: 'ghcr.io/minimalblue'
-          pubkey: 'https://raw.githubusercontent.com/minimalblue/minimalblue/live/cosign.pub'
+          pubkey: 'https://raw.githubusercontent.com/minimalblue/minimalblue/main/cosign.pub'
 
        # the build is fully handled by the reusable github action
       - name: Build ulxqt
