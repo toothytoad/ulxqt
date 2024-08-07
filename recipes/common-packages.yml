@@ -20,7 +20,9 @@ install:
 # graphics
   - colord
   - xiccd
-
+  - intel-vpl-gpu-rt
+  - libva-intel-media-driver
+  
 # container
   - podman-compose
 
