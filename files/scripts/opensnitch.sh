@@ -22,4 +22,4 @@ rpm --import gustavo_iniguez_goia.asc
 
 dnf install -y opensnitch-1.6.6-1.x86_64.rpm opensnitch-ui-1.6.6-1.noarch.rpm
 
-systemctl enable opensnitch.service
+#systemctl enable opensnitch.service
