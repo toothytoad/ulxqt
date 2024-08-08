@@ -6,20 +6,4 @@ set -oue pipefail
 #podman image trust set -t accept docker.io/ollama/ollama
 #podman image trust set -t accept ghcr.io/open-webui/open-webui
 
-yq -i -o=j '.transports.docker |=
-    {"docker.io/ollama": [
-        {
-          "type": "accept"
-        }
-      ]
-    }
-+ .' /usr/etc/containers/policy.json
 
-yq -i -o=j '.transports.docker |=
-    {"ghcr.io/open-webui": [
-        {
-          "type": "accept"
-        }
-      ]
-    }
-+ .' /usr/etc/containers/policy.json
