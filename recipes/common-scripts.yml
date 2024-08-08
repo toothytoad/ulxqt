@@ -2,3 +2,4 @@ type: script
 scripts:
   - opensnitch.sh
   - enablecups.sh
+  - setpodmantrust.sh
