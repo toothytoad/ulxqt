@@ -7,6 +7,7 @@ install:
 
 # environment
   - android-tools
+  - webkit2gtk4.0
 
 # power
   - powertop
