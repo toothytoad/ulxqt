@@ -16,5 +16,6 @@ modules:
   - from-file: common-flatpaks.yml
   - from-file: common-scripts.yml
   - from-file: opensnitch-services.yml
+  - from-file: spacenavd-services.yml
   - type: akmods
   - type: ulxqt-signing
