@@ -20,15 +20,22 @@ set -oue pipefail
 #
 #  For systems running systemd, there is a spacenavd.service file under contrib/systemd. Follow your system documentation for how to use it.
 
-# libX11-devel libXi-devel libXtst-devel
-  
+#  libX11-devel libXi-devel libXtst-devel
 # musl-gcc
 
+#cd /tmp
+
+ #     "browser_download_url": "https://github.com/FreeSpacenav/spacenavd/releases/download/v1.3/spacenavd-1.3.tar.gz"
+
+
+curl -L 'https://api.github.com/repos/FreeSpacenav/spacenavd/releases/latest' | \
+  awk -F \" -v RS="," '/tarball/ {print $(NF-1)}'
+  
 URL=$(wget https://api.github.com/repos/FreeSpacenav/spacenavd/releases/latest -O - | awk -F \" -v RS="," '/browser_download_url/ {print $(NF-1)}'); wget $URL -O spacenavd.tar.gz
 
-tar -xzvf spacenavd.tar.gz && cd spacenavd
+tar -xzvf $(basename "$URL") && cd $(basename -s '.tar.gz' $(basename "$URL"))
 
 dnf install -y gcc make libX11 libXi libXtst
-./configure && make && make install --prefix="/usr/local"
 
+./configure && make && make install --prefix="/usr/local"
 
