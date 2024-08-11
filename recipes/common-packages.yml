@@ -80,6 +80,7 @@ install:
   - gnome-icon-theme
   - gnome-themes-extra
   - paper-icon-theme
+  - breeze-icon-theme 
   - papirus-icon-theme
 remove:
   #- power-profiles-daemon # Conflicts with TLP
