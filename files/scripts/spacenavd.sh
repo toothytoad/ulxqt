@@ -24,29 +24,11 @@ set -oue pipefail
   
 # musl-gcc
 
-#cd /tmp
-
- #     "browser_download_url": "https://github.com/FreeSpacenav/spacenavd/releases/download/v1.3/spacenavd-1.3.tar.gz"
-
-
-curl -L 'https://api.github.com/repos/FreeSpacenav/spacenavd/releases/latest' | \
-  awk -F \" -v RS="," '/tarball/ {print $(NF-1)}'
-  
 URL=$(wget https://api.github.com/repos/FreeSpacenav/spacenavd/releases/latest -O - | awk -F \" -v RS="," '/browser_download_url/ {print $(NF-1)}'); wget $URL -O spacenavd.tar.gz
 
 tar -xzvf spacenavd.tar.gz && cd spacenavd
 
 dnf install -y gcc make libX11 libXi libXtst
 ./configure && make && make install --prefix="/usr/local"
-
-#mkdir -p /etc/systemd/system/
-#cp contrib/systemd/spacenavd.service /etc/systemd/system/spacenavd.service
-
-#systemctl enable spacenavd.service
-
-
-
-
-
 
 
