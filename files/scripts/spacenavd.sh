@@ -31,7 +31,7 @@ set -oue pipefail
 curl -L 'https://api.github.com/repos/FreeSpacenav/spacenavd/releases/latest' | \
   awk -F \" -v RS="," '/tarball/ {print $(NF-1)}'
   
-URL=$(wget https://api.github.com/repos/FreeSpacenav/spacenavd/releases/latest -O - | awk -F \" -v RS="," '/browser_download_url/ {print $(NF-1)}'); wget $URL -O spacenavd.tar.gz
+URL=$(wget https://api.github.com/repos/FreeSpacenav/spacenavd/releases/latest -O - | awk -F \" -v RS="," '/browser_download_url/ {print $(NF-1)}'); wget $URL -O $(basename "$URL")
 
 tar -xzvf $(basename "$URL") && cd $(basename -s '.tar.gz' $(basename "$URL"))
 
