@@ -3,3 +3,4 @@ scripts:
   - opensnitch.sh
   - enablecups.sh
   - setpodmantrust.sh
+  - spacenavd.sh
