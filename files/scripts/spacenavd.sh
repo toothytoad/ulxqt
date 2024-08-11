@@ -37,5 +37,5 @@ tar -xzvf $(basename "$URL") && cd $(basename -s '.tar.gz' $(basename "$URL"))
 
 dnf install -y gcc make libX11 libXi libXtst
 
-./configure && make && make install --prefix="/usr/local"
+bash configure && make && make install --prefix="/usr/local"
 
