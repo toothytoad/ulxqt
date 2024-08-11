@@ -39,5 +39,5 @@ dnf install -y gcc make libX11-devel libXi-devel libXtst-devel
 
 bash configure && make && make install
 
-dnf remove -y gcc make libX11-devel libXi-devel libXtst-devel
+dnf uninstall -y gcc make libX11-devel libXi-devel libXtst-devel
 
