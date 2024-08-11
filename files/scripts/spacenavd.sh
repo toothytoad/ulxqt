@@ -23,7 +23,7 @@ set -oue pipefail
 # libX11-devel libXi-devel libXtst-devel
 # musl-gcc
 
-cd /tmp
+#cd /tmp
 
 #https://github.com/FreeSpacenav/spacenavd/releases/download/v1.3/spacenavd-1.3.tar.gz
 curl -s https://api.github.com/repos/FreeSpacenav/spacenavd/releases/latest \
@@ -35,9 +35,10 @@ dnf install -y gcc make libX11 libXi libXtst
 
 ./configure && make && make install --prefix="/usr/local"
 
-cp contrib/systemd/spacenavd.service /etc/systemd/system/spacenavd.service
+#mkdir -p /etc/systemd/system/
+#cp contrib/systemd/spacenavd.service /etc/systemd/system/spacenavd.service
 
-systemctl enable spacenavd.service
+#systemctl enable spacenavd.service
 
 
 

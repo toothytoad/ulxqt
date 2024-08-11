@@ -3,7 +3,7 @@
 # Tell build process to exit if there are any errors.
 set -oue pipefail
 
-cd /tmp
+#cd /tmp
 
 if [ which pip ] ; then
     pip install qt-material grpcio-tools unicode_slugify pyinotify
