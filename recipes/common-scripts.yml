@@ -4,3 +4,4 @@ scripts:
   - enablecups.sh
   - setpodmantrust.sh
   - spacenavd.sh
+  - mullvad.sh

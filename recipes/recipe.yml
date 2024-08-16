@@ -10,11 +10,11 @@ modules:
   - from-file: common-packages.yml
   - from-file: common-files.yml
   - from-file: fonts.yml
+  - from-file: common-flatpaks.yml
+  - from-file: common-scripts.yml
   - from-file: mullvad-packages.yml
   - from-file: mullvad-services.yml
   - from-file: common-services.yml
-  - from-file: common-flatpaks.yml
-  - from-file: common-scripts.yml
   - from-file: opensnitch-services.yml
   - from-file: spacenavd-services.yml
   - type: akmods
