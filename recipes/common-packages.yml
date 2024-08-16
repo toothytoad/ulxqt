@@ -24,6 +24,9 @@ install:
   - intel-vpl-gpu-rt
   - libva-intel-media-driver
   
+# networking
+  - wireguard-tools
+  
 # container
   - podman-compose
 
