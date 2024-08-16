@@ -3,3 +3,4 @@ repos:
        - https://repository.mullvad.net/rpm/stable/mullvad.repo
 install:
   - mullvad-vpn
+  - libappindicator-gtk3
