@@ -5,6 +5,6 @@ set -oue pipefail
 
 
 mkdir -p "/usr/lib/opt/Mullvad VPN"
-mkdir -p "/opt/Mullvad VPN/resources/mullvad-setup"
+mkdir -p "/opt/Mullvad VPN/"
 
 
