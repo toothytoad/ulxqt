@@ -27,5 +27,5 @@ URL=$(wget https://api.github.com/repos/FreeSpacenav/spacenavd/releases/latest -
   && tar -xzvf $(basename "$URL") && rm -rf $(basename "$URL") && cd $(basename -s '.tar.gz' $(basename "$URL")) \
   && dnf install -y gcc make libX11-devel libXi-devel libXtst-devel \
   && bash configure && make && make install \
-  && dnf uninstall -y gcc make libX11-devel libXi-devel libXtst-devel \
+#  && dnf uninstall -y gcc make libX11-devel libXi-devel libXtst-devel \
   && rm -rf $(basename -s '.tar.gz' $(basename "$URL"))
