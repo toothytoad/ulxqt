@@ -54,7 +54,7 @@ jobs:
       - name: Build ulxqt
         uses: blue-build/github-action@v1.6.1
         with:
-          cli_version: v0.8.11
+          cli_version: v0.8.12
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
@@ -62,3 +62,4 @@ jobs:
 
           # enabled by default, disable if your image is small and you want faster builds      
           maximize_build_space: true
+          squash: true
