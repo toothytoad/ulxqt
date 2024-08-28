@@ -26,9 +26,13 @@ install:
   
 # networking
   - wireguard-tools
-  
+ 
+# storage
+  - gnome-disk-utility
+ 
 # container
   - podman-compose
+  - spice-vdagent
 
  # input
   - fprintd
