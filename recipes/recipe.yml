@@ -17,5 +17,5 @@ modules:
   - from-file: common-services.yml
   - from-file: opensnitch-services.yml
   - from-file: spacenavd-services.yml
-  - type: akmods
+  #- type: akmods
   - type: ulxqt-signing
