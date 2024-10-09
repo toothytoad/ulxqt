@@ -75,7 +75,6 @@ install:
   - nano
   - p7zip
   - ripgrep
-  - spice-vdagent
   - unrar
   - wget2
   - zlib
