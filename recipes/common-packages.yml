@@ -29,6 +29,8 @@ install:
  
 # storage
   - gnome-disk-utility
+  - fuse
+  - fuse-libs
  
 # container
   - podman-compose
