@@ -19,190 +19,26 @@ modules:
         - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-signing.noarch.rpm /
         - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-luks.noarch.rpm /
         - COPY --from=ghcr.io/ublue-os/config:latest /rpms/ublue-os-just.noarch.rpm /
-        - RUN rpm -ivh /ublue-os-udev-rules.noarch.rpm
-        - RUN rpm -ivh /ublue-os-update-services.noarch.rpm
-        - RUN rpm -ivh /ublue-os-signing.noarch.rpm
-        - RUN rpm -ivh /ublue-os-luks.noarch.rpm
-        - RUN rpm -ivh /ublue-os-just.noarch.rpm
-
-
+        - RUN rpm -q ublue-os-udev-rules || rpm -ivh /ublue-os-udev-rules.noarch.rpm
+        - RUN rpm -q ublue-os-update-services || rpm -ivh /ublue-os-update-services.noarch.rpm
+        - RUN rpm -q ublue-os-signing || rpm -ivh /ublue-os-signing.noarch.rpm
+        - RUN rpm -q ublue-os-luks || rpm -ivh /ublue-os-luks.noarch.rpm
+        - RUN rpm -q ublue-os-just || rpm -ivh /ublue-os-just.noarch.rpm
     - type: script
       scripts:
         - installandroidudev.sh
         - installrpmfusion.sh
-
-    - type: rpm-ostree
-      repos:
-        - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
-        - https://copr.fedorainfracloud.org/coprs/atim/lazygit/repo/fedora-%OS_VERSION%/atim-lazygit-fedora-%OS_VERSION%.repo
-        - https://copr.fedorainfracloud.org/coprs/dschubert/xiccd/repo/fedora-%OS_VERSION%/dschubert-xiccd-fedora-%OS_VERSION%.repo
-      install:
-      # launcher
-      #  - rofi-wayland
-
-      # environment
-        - power-profiles-daemon
-      #  - xorg-x11-server-Xwayland
-        - headsetcontrol
-        - mediainfo
-        - polkit
-      #  - xfce-polkit 
-      #  - fprintd-pam
-        - xdg-user-dirs
-        - dbus-tools
-        - dbus-daemon
-      #  - wl-clipboard
-        - pavucontrol
-        - playerctl
-      #  - qt5-qtwayland
-      #  - qt6-qtwayland
-        - vulkan-validation-layers
-        - vulkan-tools
-        - google-noto-emoji-fonts
-        - gnome-disk-utility
-        - ddcutil
-        - openssl
-        - vim
-        - just
-        - alsa-firmware
-        - p7zip
-        - unrar
-        - webkit2gtk4.0
-        
-      # sound
-        - wireplumber
-        - pipewire
-        - pamixer
-        - pulseaudio-utils
-
-      # power
-        - powertop
-        - tlp
-        - tlp-rdw
-
-      # networking
-        - network-manager-applet
-        - NetworkManager-openvpn
-        - NetworkManager-openconnect
-        - bluez
-        - bluez-tools
-        - blueman
-        - firewall-config
-        - wireguard-tools
-
-      # file manager
-      #  - thunar
-      #  - thunar-archive-plugin 
-      #  - thunar-volman
-      #  - xarchiver
-        - imv
-        - p7zip
-        - gvfs-mtp
-        - gvfs-gphoto2
-        - gvfs-smb
-        - gvfs-nfs
-        - gvfs-fuse
-        - gvfs-archive
-        - android-tools
-		
-      # firmware
-        - fwupd
-        - fwupd-efi
-  
-      # graphics
-        - colord
-        - xiccd
-        - intel-vpl-gpu-rt
-        - libva-intel-media-driver
-  
-
-      # storage
-        - gnome-disk-utility
-      #  - fuse
-      #  - fuse-libs
- 
-      # container
-        - podman-compose
-        - spice-vdagent
-
-       # input
-        - fprintd
-        - solaar
-        - solaar-udev
-        - xorg-x11-drv-synaptics-devel
- 
-      # window manager
-        - xfwm4
-
-      # terminal
-        - cheat
-        - cheat-bash-completion
-        - cheat-community-cheatsheets
-        - cheat-fish-completion
-        - fish
-        - kitty
-        - kitty-fish-integration
-        - starship
-        - yt-dlp-bash-completion
-        - yt-dlp-fish-completion
-
-      # Spellcheck
-        - aspell
-        - aspell-en
-        - hunspell
-        - hunspell-en
- 
-       # command line utils
-        - aria2
-        - bat
-        - difftastic
-        - exa
-        - fd-find
-        - fzf
-        - lazygit
-        - lz4
-        - lzip
-        - micro
-        - nano
-        - p7zip
-        - ripgrep
-        - unrar
-        - wget2
-        - zlib
-        - zoxide
-        - zstd
-
-
-      # screenshot
-      #  - slurp
-      #  - grim
-
-      # display
-      #  - wlr-randr
-      #  - wlsunset
-        - brightnessctl
-        - kanshi
-
-      # notifications
-      #  - dunst
-
-      # theme and GUI
-        - adwaita-qt5
-        - fontawesome-fonts-all
-        - gnome-themes-extra
-        - gnome-icon-theme
-        - paper-icon-theme
-        - breeze-icon-theme 
-        - papirus-icon-theme
-
-    - type: script
-      scripts:
-        - installproprietarypackages.sh
         - opensnitch.sh
         - enablecups.sh
         - setpodmantrust.sh
         - spacenavd.sh
 
+    - from-file: common/common-packages.yml
+
+    - type: script
+      scripts:
+        - installproprietarypackages.sh
+ 
     - type: rpm-ostree
       install:
         - heif-pixbuf-loader
@@ -227,7 +63,7 @@ modules:
         - libpostproc-free
         - libswresample-free
         - libswscale-free
-        #- power-profiles-daemon # Conflicts with TLP
+#       - power-profiles-daemon # Conflicts with TLP
 
     - type: script
       scripts:
@@ -244,10 +80,10 @@ modules:
       include:
         - zz1-secureblue-theming.gschema.override
 
-    - type: script
-      scripts:
-        - settheming.sh
-        - addbrewjustimport.sh
+#    - type: script
+#      scripts:
+#        - settheming.sh
+#        - addbrewjustimport.sh
 
     - type: systemd
       system:
@@ -255,17 +91,17 @@ modules:
           - tlp.service
           - NetworkManager-dispatcher.service
           - opensnitch.service
-          #- fprintd.service
+#          - fprintd.service
           - fwupd.service
           - colord.service
           - spacenavd.service
         disable:
           - systemd-rfkill.socket
           - systemd-rfkill.service
-          - power-profiles-daemon.service
+#          - power-profiles-daemon.service
         mask:
           - systemd-rfkill.socket
           - systemd-rfkill.service
-          - power-profiles-daemon.service
+#          - power-profiles-daemon.service
 
     - type: ulxqt-signing
