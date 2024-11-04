@@ -8,4 +8,4 @@ curl -Lo /etc/yum.repos.d/_copr_atim_lazygit https://copr.fedorainfracloud.org/c
 curl -Lo /etc/yum.repos.d/_copr_dschubert_xiccd https://copr.fedorainfracloud.org/coprs/dschubert/xiccd/repo/fedora-"${OS_VERSION}"/dschubert-xiccd-fedora-"${OS_VERSION}".repo
 
 rpm-ostree install starship lazygit xiccd
-rm /etc/yum.repos.d/_copr_atim_starship.repo /etc/yum.repos.d/_copr_atim_lazygit.repo /etc/yum.repos.d/_copr_dschubert_xiccd.repo
+rm -f /etc/yum.repos.d/_copr_atim_starship.repo /etc/yum.repos.d/_copr_atim_lazygit.repo /etc/yum.repos.d/_copr_dschubert_xiccd.repo
