@@ -51,7 +51,7 @@ jobs:
           pubkey: 'https://raw.githubusercontent.com/minimalblue/minimalblue/main/cosign.pub'
 
       - name: Validate kernel and kmod versions
-        uses: Wandalen/wretry.action@v3.5.0
+        uses: Wandalen/wretry.action@v3.7.0
         with:
           attempt_limit: 3
           attempt_delay: 15000
