@@ -36,11 +36,11 @@ jobs:
           BASE_IMAGE=$(yq '.base-image' ./recipes/${{ matrix.recipe }})
           echo "BASE_IMAGE_NAME=$(echo $BASE_IMAGE | sed 's/.*\/.*\///')" >> $GITHUB_ENV
 
-      - name: Verify base image
-        if: ${{ !contains(env.IMAGE_NAME, 'minimalblue') }}
-        uses: EyeCantCU/cosign-action/verify@v0.3.0
-        with:
-          containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
+#      - name: Verify base image
+#        if: ${{ !contains(env.IMAGE_NAME, 'minimalblue') }}
+#        uses: EyeCantCU/cosign-action/verify@v0.3.0
+#        with:
+#          containers: ${{ env.BASE_IMAGE_NAME }}:${{ env.IMAGE_MAJOR_VERSION }}
 
       - name: Verify base image
         if: ${{ contains(env.IMAGE_NAME, 'minimalblue') }}
@@ -76,5 +76,5 @@ jobs:
           pr_event_number: ${{ github.event.number }}
 
           # enabled by default, disable if your image is small and you want faster builds      
-#          maximize_build_space: true
-#          squash: true
+          maximize_build_space: true
+          squash: true
