@@ -10,7 +10,6 @@ modules:
 #    - type: script
 #      scripts:
 #        - installsignedkernel.sh
-#
 #    - type: containerfile
 #      snippets:
 #        - RUN rpm-ostree install just powerstat
@@ -42,31 +41,23 @@ modules:
           destination: /usr
         - source: system/etc
           destination: /etc
-#    - type: gschema-overrides
-#      include:
-#        - zz1-secureblue-theming.gschema.override
 
-#    - type: script
-#      scripts:
-#        - settheming.sh
-#        - addbrewjustimport.sh
     - type: systemd
       system:
         enabled:
           - tlp.service
           - NetworkManager-dispatcher.service
           - opensnitch.service
-#          - fprintd.service
           - fwupd.service
           - colord.service
           - spacenavd.service
         disable:
           - systemd-rfkill.socket
           - systemd-rfkill.service
-#          - power-profiles-daemon.service
+          - power-profiles-daemon.service
         mask:
           - systemd-rfkill.socket
           - systemd-rfkill.service
-#          - power-profiles-daemon.service
+          - power-profiles-daemon.service
 
     - type: ulxqt-signing
