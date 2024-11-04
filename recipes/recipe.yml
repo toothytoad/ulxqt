@@ -1,6 +1,6 @@
 name: minimalblue-lxqt-main-userns-hardened
 
-description: ublue images for lxqt
+description: "ublue images for lxqt"
 
 base-image: ghcr.io/minimalblue/lxqt-main-userns-hardened
 
@@ -10,4 +10,5 @@ modules:
   - from-file: common/common-modules.yml
   - from-file: common/flatpaks-modules.yml
   - from-file: common/mullvad-modules.yml
-  - from-file: common/fonts.yml
+  - from-file: common/fonts-modules.yml
+  - from-file: common/final-modules.yml
