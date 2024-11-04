@@ -8,8 +8,6 @@ image-version: 41
 
 modules:
   - from-file: common/common-modules.yml
-  - from-file: common/fonts.yml
   - from-file: common/flatpaks-modules.yml
   - from-file: common/mullvad-modules.yml
-  #- type: akmods
-  #- type: ulxqt-signing
+  - from-file: common/fonts.yml
