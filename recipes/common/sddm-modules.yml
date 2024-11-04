@@ -1,7 +1,7 @@
 modules: 
     - type: rpm-ostree
       install:
-         - sddm
+        - sddm
         - sddm-x11
         - sddm-themes
         - qt6-qtimageformats
