@@ -1,0 +1,20 @@
+modules:
+    - type: rpm-ostree
+      repos:
+        - https://repository.mullvad.net/rpm/stable/mullvad.repo
+      keys:
+        - https://repository.mullvad.net/rpm/mullvad-keyring.asc
+      #optfix:
+      #  - Mullvad-Vpn
+      install:
+        - mullvad-vpn
+        - libappindicator-gtk3
+
+    - type: script
+      scripts:
+        - mullvad.sh
+
+    - type: systemd
+      system:
+        enabled:
+          - mullvad-daemon.service

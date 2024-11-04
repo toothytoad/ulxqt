@@ -4,18 +4,12 @@ description: ublue images for lxqt
 
 base-image: ghcr.io/minimalblue/lxqt-main-userns-hardened
 
-image-version: 40 
+image-version: 41 
 
 modules:
-  - from-file: common-packages.yml
-  - from-file: common-files.yml
-  - from-file: fonts.yml
-  - from-file: common-flatpaks.yml
-  - from-file: common-scripts.yml
-  - from-file: mullvad-packages.yml
-  - from-file: mullvad-services.yml
-  - from-file: common-services.yml
-  - from-file: opensnitch-services.yml
-  - from-file: spacenavd-services.yml
+  - from-file: common/common-modules.yml
+  - from-file: common/fonts.yml
+  - from-file: common/flatpaks-modules.yml
+  - from-file: common/mullvad-modules.yml
   #- type: akmods
-  - type: ulxqt-signing
+  #- type: ulxqt-signing

@@ -1,7 +1,0 @@
-type: script
-scripts:
-  - opensnitch.sh
-  - enablecups.sh
-  - setpodmantrust.sh
-  - spacenavd.sh
-  - mullvad.sh

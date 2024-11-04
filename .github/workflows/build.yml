@@ -50,16 +50,31 @@ jobs:
           registry: 'ghcr.io/minimalblue'
           pubkey: 'https://raw.githubusercontent.com/minimalblue/minimalblue/main/cosign.pub'
 
+      - name: Validate kernel and kmod versions
+        uses: Wandalen/wretry.action@v3.5.0
+        with:
+          attempt_limit: 3
+          attempt_delay: 15000
+          command: |
+            set -eo pipefail
+            linux=$(skopeo inspect docker://ghcr.io/ublue-os/main-kernel:41 | jq -r '.Labels["ostree.linux"]')
+            AKMODS_KERNEL_VERSION=$(skopeo inspect docker://ghcr.io/ublue-os/akmods:main-41 | jq -r '.Labels["ostree.linux"]')
+            if [[ "${linux}" != "${AKMODS_KERNEL_VERSION}" ]]; then
+              echo "Kernel Versions do not match between AKMODS and Cached-Kernel."
+              exit 1
+            fi
+            echo "KERNEL_VERSION=$linux" >> $GITHUB_ENV
+
        # the build is fully handled by the reusable github action
       - name: Build ulxqt
         uses: blue-build/github-action@v1.6.2
         with:
-          cli_version: v0.8.14
+          cli_version: v0.8.20
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
           registry_token: ${{ github.token }}
           pr_event_number: ${{ github.event.number }}
 
           # enabled by default, disable if your image is small and you want faster builds      
-          maximize_build_space: true
-          squash: true
+#          maximize_build_space: true
+#          squash: true
