@@ -30,7 +30,7 @@ modules:
     - type: script
       scripts:
         - installandroidudev.sh
-        - installmissingpkgs.sh
+        #- installmissingpkgs.sh
         - opensnitch.sh
         - enablecups.sh
         - setpodmantrust.sh
