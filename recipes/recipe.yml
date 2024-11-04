@@ -9,7 +9,8 @@ image-version: 41
 modules:
   - from-file: common/sddm-modules.yml
   - from-file: common/common-modules.yml
-  - from-file: common/flatpaks-modules.yml
+#  - from-file: common/flatpaks-modules.yml
   - from-file: common/mullvad-modules.yml
   - from-file: common/fonts-modules.yml
+  - from-file: common/proprietary-modules.yml
   - from-file: common/final-modules.yml
