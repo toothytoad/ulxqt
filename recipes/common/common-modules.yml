@@ -27,6 +27,7 @@ modules:
     - type: script
       scripts:
         - installandroidudev.sh
+        - installmissingpkgs.sh
         - installrpmfusion.sh
         - opensnitch.sh
         - enablecups.sh
