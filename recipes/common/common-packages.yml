@@ -74,7 +74,6 @@ install:
   
   # graphics
   - colord
-  - xiccd
   - intel-vpl-gpu-rt
   - libva-intel-media-driver
   
@@ -105,7 +104,6 @@ install:
   - fish
   - kitty
   - kitty-fish-integration
-  - starship
   - yt-dlp-bash-completion
   - yt-dlp-fish-completion
 
@@ -122,7 +120,6 @@ install:
   - exa
   - fd-find
   - fzf
-  - lazygit
   - lz4
   - lzip
   - micro

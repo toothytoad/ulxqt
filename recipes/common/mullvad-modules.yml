@@ -10,9 +10,9 @@ modules:
         - mullvad-vpn
         - libappindicator-gtk3
 
-    - type: script
-      scripts:
-        - mullvad.sh
+#    - type: script
+#      scripts:
+#        - mullvad.sh
 
     - type: systemd
       system:
