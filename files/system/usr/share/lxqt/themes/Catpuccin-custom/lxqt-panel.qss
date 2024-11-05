@@ -8,7 +8,7 @@
 }
 
 LXQtPanel #BackgroundWidget {
-    background-color: rgb(17, 17, 27);
+    background-color: rgba(17, 17, 27, 65%);
     border-radius: 10%;
     padding-left: 2%;
     padding-right: 2%;
@@ -97,7 +97,7 @@ LXQtPanelPlugin > QToolButton:pressed {
  * Calendar (from any of the two clocks)
  */
 QCalendarWidget #qt_calendar_navigationbar{
-   background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0  rgb(17, 17, 27), stop:1 rgb(17, 17, 27));
+   background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0  rgba(17, 17, 27, 100% ), stop:1 rgba(17, 17, 27, 80% ));
    border: 1px solid #1e1e2e;
 }
 
