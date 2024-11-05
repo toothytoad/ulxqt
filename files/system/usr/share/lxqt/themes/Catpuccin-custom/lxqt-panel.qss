@@ -8,7 +8,7 @@
 }
 
 LXQtPanel #BackgroundWidget {
-    background-color: rgba(17, 17, 27, 65%);
+    background-color: rgba(30, 30, 46 65%);
     border-radius: 10%;
     padding-left: 2%;
     padding-right: 2%;
@@ -97,8 +97,8 @@ LXQtPanelPlugin > QToolButton:pressed {
  * Calendar (from any of the two clocks)
  */
 QCalendarWidget #qt_calendar_navigationbar{
-   background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0  rgba(17, 17, 27, 100% ), stop:1 rgba(17, 17, 27, 80% ));
-   border: 1px solid #1e1e2e;
+   background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0  rgba(30, 30, 46, 100% ), stop:1 rgba(30, 30, 46 80% ));
+   border: 1px solid #575268;
 }
 
 QCalendarWidget #qt_calendar_navigationbar,
@@ -155,13 +155,13 @@ QCalendarWidget #qt_calendar_yearbutton:hover {
 
 QCalendarWidget QMenu {
     margin: 4px;
-    color: #11111b;
-    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:0.5, stop:0.1  rgb(30, 30, 46), stop:0.8   rgb(30, 30, 46));
+    color: 1E1E2E;
+    background-color:qlineargradient(x1:0, y1:0, x2:0, y2:0.5, stop:0.1  rgba(30, 30, 46 100% ), stop:0.8   rgba(30, 30, 46 95% ));
 }
 
 
 QCalendarWidget QMenu::item:selected {
-    color: #313244;
+    color: 1E1E2E;
     background-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0  rgba(30, 30, 46 30% ), stop:1 rgba(30, 30, 46 30% ));
 }
 
@@ -257,9 +257,8 @@ QCalendarWidget QWidget {
     margin-bottom: 2px;
     padding: 1px;
     border: 1px;
-/*    qproperty-icon: url(penguin.png);*/
     qproperty-icon: url(mainmenu.svg);
-    color: #11111b;
+    color: #1E1E2E;
 }
 
 #MainMenu:pressed {
@@ -276,9 +275,9 @@ QCalendarWidget QWidget {
 
 
 #MainMenu  QMenu{
-    background-color: #11111b;
+    background-color: rgba(30, 30, 46 90%);
     color: red;
-    border: 1px solid #1e1e2e; 
+    border: 1px solid #575268; 
     border-radius: 10%;
 }
 
