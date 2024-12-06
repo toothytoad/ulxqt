@@ -1,6 +1,7 @@
 modules:
     - type: rpm-ostree
       repos:
+        # - https://repository.mullvad.net/rpm/beta/mullvad.repo
         - https://repository.mullvad.net/rpm/stable/mullvad.repo
       keys:
         - https://repository.mullvad.net/rpm/mullvad-keyring.asc
