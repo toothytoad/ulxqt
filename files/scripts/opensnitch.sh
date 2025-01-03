@@ -17,7 +17,7 @@ fi
 
 
 
-wget -c https://github.com/evilsocket/opensnitch/releases/download/v1.6.6/gustavo_iniguez_goia.asc https://github.com/evilsocket/opensnitch/releases/download/v1.6.6/opensnitch-1.6.6-1.x86_64.rpm https://github.com/evilsocket/opensnitch/releases/download/v1.6.6/opensnitch-ui-1.6.6-1.noarch.rpm
+wget -c https://github.com/evilsocket/opensnitch/releases/download/v1.6.7/gustavo_iniguez_goia.asc https://github.com/evilsocket/opensnitch/releases/download/v1.6.6/opensnitch-1.6.6-1.x86_64.rpm https://github.com/evilsocket/opensnitch/releases/download/v1.6.7/opensnitch-ui-1.6.7-1.noarch.rpm
 
 rpm --import gustavo_iniguez_goia.asc
 
