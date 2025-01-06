@@ -1,84 +1,87 @@
 modules:
     - type: default-flatpaks
       notify: true # Send notification after install/uninstall is finished (true/false)
+      system:
+        install:
       user:
-        # If no repo information is specified, Flathub will be used by default
-        repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-        repo-name: flathub
-        repo-title: "Flathub (user)" 
-      install:
-        - cc.arduino.IDE2
-        - com.calibre_ebook.calibre
-        - com.dosbox_x.DOSBox-X
-        - com.github.Anuken.Mindustryr
-        - com.github.marktext.marktext
-        - com.github.themix_project.Oomox
-        - com.github.zadam.trilium
-        - com.helix_editor.Helix
-        - com.makemkv.MakeMKV
-        - com.mastermindzh.tidal-hifi
-        - com.prusa3d.PrusaSlicer
-        - com.solvespace.SolveSpace
-        - com.ultimaker.cura
-        - com.valvesoftware.Steam
-        - io.dbeaver.DBeaverCommunity
-        - io.github.martchus.syncthingtray
-        - io.github.peazip.PeaZip
-        - io.kopia.KopiaUI
-        - io.neovim.nvim
-        - net.cozic.joplin_desktop
-        - net.mkiol.SpeechNote
-        - net.scribus.Scribus
-        - net.xm1math.Texmaker
-        - org.bleachbit.BleachBit
-        - org.darktable.Darktable
-        - org.gnome.Boxes
-        - org.gnome.Firmware
-        - org.gnome.meld
-        - org.gnu.emacs
-        - org.godotengine.GodotSharp
-        - org.gpodder.gpodder
-        - org.inkscape.Inkscape
-        - org.openscad.OpenSCAD
-        - org.raspberrypi.rpi-imager
-        - org.siril.Siril
-        - org.speedcrunch.SpeedCrunch
-        - org.sqlitebrowser.sqlitebrowser
-        - org.torproject.torbrowser-launcher
-        - org.videolan.VLC
+          # If no repo information is specified, Flathub will be used by default
+          repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+          repo-name: flathub
+          repo-title: "Flathub (user)" 
+        install:
+          - cc.arduino.IDE2
+          - com.calibre_ebook.calibre
+          - com.dosbox_x.DOSBox-X
+          - com.github.Anuken.Mindustryr
+          - com.github.marktext.marktext
+          - com.github.themix_project.Oomox
+          - com.github.zadam.trilium
+          - com.helix_editor.Helix
+          - com.makemkv.MakeMKV
+          - com.mastermindzh.tidal-hifi
+          - com.prusa3d.PrusaSlicer
+          - com.solvespace.SolveSpace
+          - com.ultimaker.cura
+          - com.valvesoftware.Steam
+          - io.dbeaver.DBeaverCommunity
+          - io.github.martchus.syncthingtray
+          - io.github.peazip.PeaZip
+          - io.kopia.KopiaUI
+          - io.neovim.nvim
+          - net.cozic.joplin_desktop
+          - net.mkiol.SpeechNote
+          - net.scribus.Scribus
+          - net.xm1math.Texmaker
+          - org.bleachbit.BleachBit
+          - org.darktable.Darktable
+          - org.gnome.Boxes
+          - org.gnome.Firmware
+          - org.gnome.meld
+          - org.gnu.emacs
+          - org.godotengine.GodotSharp
+          - org.gpodder.gpodder
+          - org.inkscape.Inkscape
+          - org.openscad.OpenSCAD
+          - org.raspberrypi.rpi-imager
+          - org.siril.Siril
+          - org.speedcrunch.SpeedCrunch
+          - org.sqlitebrowser.sqlitebrowser
+          - org.torproject.torbrowser-launcher
+          - org.videolan.VLC
 
     - type: default-flatpaks
       notify: true # Send notification after install/uninstall is finished (true/false)
+      system:
       user:
-        # If no repo information is specified, Flathub will be used by default
-        repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-        repo-name: flathub-verified
-        repo-title: "Flathub (user)" 
-      install:
-        - chat.simplex.simplex
-        - com.github.d4nj1.tlpui
-        - com.github.dail8859.NotepadNext
-        - com.github.tchx84.Flatseal
-        - com.github.wwmm.easyeffects
-        - com.usebottles.bottles
-        - com.vscodium.codium
-        - io.github.cboxdoerfer.FSearch 
-        - io.github.flattool.Warehouse
-        - io.gitlab.adhami3310.Impression
-        - io.podman_desktop.PodmanDesktop
-        - md.obsidian.Obsidian
-        - org.freecadweb.FreeCAD
-        - org.gimp.GIMP
-        - org.gnome.TextEditor
-        - org.gottcode.FocusWriter
-        - org.kde.elisa
-        - org.kde.filelight
-        - org.kde.kate
-        - org.keepassxc.KeePassXC
-        - org.kicad.KiCad
-        - org.libreoffice.LibreOffice
-        - org.mozilla.firefox
-        - org.mozilla.Thunderbird
-        - org.qbittorrent.qBittorrent
-        - org.upscayl.Upscayl
-        - page.codeberg.lazyt.ubpm
+          # If no repo information is specified, Flathub will be used by default
+          repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
+          repo-name: flathub-verified
+          repo-title: "Flathub-Verified (user)" 
+        install:
+          - chat.simplex.simplex
+          - com.github.d4nj1.tlpui
+          - com.github.dail8859.NotepadNext
+          - com.github.tchx84.Flatseal
+          - com.github.wwmm.easyeffects
+          - com.usebottles.bottles
+          - com.vscodium.codium
+          - io.github.cboxdoerfer.FSearch 
+          - io.github.flattool.Warehouse
+          - io.gitlab.adhami3310.Impression
+          - io.podman_desktop.PodmanDesktop
+          - md.obsidian.Obsidian
+          - org.freecadweb.FreeCAD
+          - org.gimp.GIMP
+          - org.gnome.TextEditor
+          - org.gottcode.FocusWriter
+          - org.kde.elisa
+          - org.kde.filelight
+          - org.kde.kate
+          - org.keepassxc.KeePassXC
+          - org.kicad.KiCad
+          - org.libreoffice.LibreOffice
+          - org.mozilla.firefox
+          - org.mozilla.Thunderbird
+          - org.qbittorrent.qBittorrent
+          - org.upscayl.Upscayl
+          - page.codeberg.lazyt.ubpm
