@@ -97,7 +97,7 @@ install:
   - zstd
   - brightnessctl
   - kanshi
-  - adwaita-qt5
+  - adwaita-qt6
   - fontawesome-fonts-all
   - gnome-themes-extra
   - gnome-icon-theme
