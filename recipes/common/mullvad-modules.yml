@@ -8,8 +8,8 @@ modules:
       optfix:
         - Mullvad-Vpn
       install:
-        - mullvad-vpn
-        - libappindicator-gtk3
+#        - mullvad-vpn
+#        - libappindicator-gtk3
 
     #- type: script
     #  scripts:
@@ -18,4 +18,4 @@ modules:
     - type: systemd
       system:
         enabled:
-          - mullvad-daemon.service
+#          - mullvad-daemon.service
