@@ -12,5 +12,5 @@ modules:
 #  - from-file: common/flatpaks-modules.yml
   - from-file: common/mullvad-modules.yml
   - from-file: common/fonts-modules.yml
-  - from-file: common/proprietary-modules.yml
+#  - from-file: common/proprietary-modules.yml
   - from-file: common/final-modules.yml
