@@ -7,7 +7,7 @@ modules:
         - https://repository.mullvad.net/rpm/mullvad-keyring.asc
       optfix:
         - Mullvad-Vpn
-      install:
+#      install:
 #        - mullvad-vpn
 #        - libappindicator-gtk3
 
