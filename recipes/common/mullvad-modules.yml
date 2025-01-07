@@ -15,7 +15,7 @@ modules:
     #  scripts:
     #    - mullvad.sh
 
-#    - type: systemd
-#      system:
-#        enabled:
-#          - mullvad-daemon.service
+    #- type: systemd
+      #system:
+        #enabled:
+          #- mullvad-daemon.service
