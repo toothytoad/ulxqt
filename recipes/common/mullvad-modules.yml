@@ -16,6 +16,6 @@ modules:
     #    - mullvad.sh
 
     #- type: systemd
-      #system:
-        #enabled:
-          #- mullvad-daemon.service
+    #  system:
+    #    enabled:
+    #      - mullvad-daemon.service
