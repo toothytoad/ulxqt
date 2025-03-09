@@ -2,7 +2,8 @@ name: minimalblue-lxqt-main-userns-hardened
 
 description: "ublue images for lxqt"
 
-base-image: ghcr.io/minimalblue/lxqt-main-userns-hardened
+# base-image: ghcr.io/minimalblue/lxqt-main-userns-hardened
+base-image: quay.io/fedora-ostree-desktops/base-atomic
 
 image-version: 41 
 
